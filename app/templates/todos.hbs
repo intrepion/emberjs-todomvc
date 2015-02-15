@@ -3,7 +3,7 @@
 
 <section id="main">
 <ul id="todo-list">
-{{#each}}
+{{#each itemController="todo"}}
     <li {{bind-attr class="isCompleted:completed isEditing:editing"}}>
         {{#if isEditing}}
             <input class="edit">
